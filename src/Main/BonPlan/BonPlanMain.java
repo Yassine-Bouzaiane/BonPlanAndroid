@@ -1,6 +1,7 @@
-package com.pidev.bonplan;
+package Main.BonPlan;
 
 
+import GUI.HomeForm;
 import com.codename1.ui.Display;
 import com.codename1.ui.Form;
 import com.codename1.ui.Dialog;
@@ -35,9 +36,8 @@ public class BonPlanMain {
             current.show();
             return;
         }
-        Form hi = new Form("Helloo World");
-        hi.addComponent(new Label("Hi World"));
-        hi.show();
+   HomeForm h = new HomeForm();
+        h.getF().show();
     }
 
     public void stop() {
